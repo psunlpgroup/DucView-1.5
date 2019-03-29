@@ -77,7 +77,7 @@ The XML contains the pyramid, the peer annotation, and the score of the peer sum
 #### Shortcuts:
 - Many buttons and drop down menu items can be accessed using key shortcuts consisting of ALT + KEY, where KEY is the underlined letter on the button or menu item. For instance, ALT + N will work as the "New SCU" button. Ctrl + F, Ctrl + Z, and CTRL + Y can be used to find, undo, and redo, respectively.
 
-## API
+## Class documentation
 This section contains an overview of the most important classes in the project and their functions. <br />
 
 #### DucView
