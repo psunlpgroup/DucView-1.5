@@ -6,7 +6,7 @@ ranks the importance of each content unit based on the frequency in "wise crowd"
 be a gold standard). The pyramid can then be used to judge other summaries, called "peer" summaries.
 
 ## Requirements
-Java 5 or higher.
+Java 8 or higher.
 
 ## Features
 Create pyramids and export them in XML. <br />
