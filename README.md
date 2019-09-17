@@ -5,6 +5,11 @@ same source material will typically have some content that overlaps, and some co
 ranks the importance of each content unit based on the frequency in "wise crowd" or "model" summaries (summaries judged to
 be a gold standard). The pyramid can then be used to judge other summaries, called "peer" summaries.
 
+Please cite our paper if you use this package:
+Gao, Yanjun, et al. "[Rubric Reliability and Annotation of Content and Argument in Source-Based Argument Essays](https://www.aclweb.org/anthology/W19-4452/)." Proceedings of the Fourteenth Workshop on Innovative Use of NLP for Building Educational Applications. 2019.
+
+[BibTeX Citation](https://www.aclweb.org/anthology/papers/W/W19/W19-4452.bib)
+
 ## Requirements
 Java 8 or higher.
 
