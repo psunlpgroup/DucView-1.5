@@ -1,5 +1,8 @@
 package ducview;
 
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
 import java.util.Vector;
 import javax.swing.JMenuItem;
 import javax.swing.JPopupMenu;
@@ -149,7 +152,8 @@ public class SCUTextPane extends javax.swing.JTextPane implements javax.swing.ev
     }
 
     public void loadFile(java.io.File file) throws java.io.IOException {
-        java.io.BufferedReader reader = new java.io.BufferedReader(new java.io.FileReader(file));
+        java.io.BufferedReader reader = new java.io.BufferedReader(new InputStreamReader(
+                new FileInputStream(file), StandardCharsets.UTF_8));
         StringBuffer buffer = new StringBuffer();
         String line;
         while ((line = reader.readLine()) != null) {

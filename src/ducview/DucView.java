@@ -4,7 +4,10 @@ import javax.swing.*;
 import javax.swing.filechooser.FileFilter;
 import java.awt.*;
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.FilenameFilter;
+import java.io.OutputStreamWriter;
+import java.nio.charset.StandardCharsets;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -1065,7 +1068,7 @@ public class DucView extends javax.swing.JFrame implements java.awt.event.Action
     private boolean writeout(java.io.File file, boolean writePeer) {
         boolean success = true;
         try {
-            java.io.PrintWriter writer = new java.io.PrintWriter(new java.io.BufferedWriter(new java.io.FileWriter(file)));
+            java.io.PrintWriter writer = new java.io.PrintWriter(new OutputStreamWriter(new FileOutputStream(file, true), StandardCharsets.UTF_8));
 
             writer.println("<?xml version=\"1.0\"?>");
             writer.println("<!DOCTYPE " + (writePeer ? "peerAnnotation" : "pyramid") + " [");
